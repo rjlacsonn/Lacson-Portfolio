@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Image Map</title>
+    <link rel="stylesheet" href="../CSS/shapestyle.css">
+</head>
+
+<body>
+
+    <h2>Click on the shape or on one of the shape to watch it closer:</h2>
+
+    <div class="container">
+        <img src="../IMAGES/shape.jpg" usemap="#image-map" alt="Shapes" class="image-map">
+
+        <map name="image-map">
+            <area target="_self" alt="circle" href="circle.html" coords="120,126,110" shape="circle">
+            <area target="_self" alt="star" href="star.html" coords="379,5,344,93,238,96,321,152,292,243,381,192,466,245,437,153,519,96,414,92" shape="poly">
+            <area target="_self" alt="heart" href="heart.html" coords="663,60,675,39,691,25,713,13,736,11,753,16,767,26,776,40,784,61,785,86,773,128,756,157,735,181,703,209,663,232,637,218,607,199,591,181,568,156,552,127,542,96,540,70,542,53,551,35,564,22,583,11,602,11,617,14,634,25,650,40" shape="poly">
+        </map>
+    </div>
+</body>
+</html>

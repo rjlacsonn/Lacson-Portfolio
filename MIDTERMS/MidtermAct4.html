@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MIDTERM ACTIVITY 4 HTML FORMS</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f4f0ee;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .form-wrapper {
+      background-color: #ffffff;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid #ccc;
+    }
+
+    .header-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .title-block {
+      text-align: center;
+      flex: 1;
+      margin-left: -100px;
+    }
+
+    .title-block h1,
+    .title-block h2,
+    .title-block h3 {
+      margin: 2px 0;
+    }
+
+    .line-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .line-group label {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .line-group input {
+      border: none;
+      border-bottom: 1px solid #000;
+      background: transparent;
+      flex: 1;
+      padding: 4px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 18px;
+      border-bottom: 2px solid #000;
+      margin-top: 30px;
+      padding-bottom: 5px;
+    }
+
+    .input-section {
+      margin-top: 10px;
+    }
+
+    .input-field {
+      margin-bottom: 12px;
+    }
+
+    .input-field label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 4px;
+      font-family: "Times New Roman", Times, serif;
+      border: 1px solid #000;
+      background: #fdfdfd;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      display: block;
+      margin-left: 20px;
+    }
+
+    .split-columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    hr {
+      border: 1px dashed #000;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <div class="header-section">
+        <div class="logo-box">
+            <img src="../IMAGES/jey logo.png" alt="University Logo">
+          </div>
+      <div class="title-block">
+        <h1>JEY LAC'S UNIVERSITY</h1>
+        <h3>ENROLLMENT SYSTEM</h3>
+        <h2>PERSONAL DATA SHEET</h2>
+        <p><i>(Graduate School, Law, Medicine)</i></p>
+      </div>
+    </div>
+
+    <div class="line-group">
+      <label>Program:</label>
+      <input type="text" name="program">
+      <label style="margin-left: 30px;">Student #:</label>
+      <input type="text" name="student_number">
+    </div>
+
+    <div class="section-title">STUDENT DETAILS</div>
+    <div class="input-section">
+      <div class="line-group">
+        <label>Surname:</label><input type="text">
+        <label>Given Name:</label><input type="text">
+        <label>Middle Name:</label><input type="text">
+        <label>Auxiliary Name:</label><input type="text">
+      </div>
+      <div class="line-group">
+        <label>City Address:</label><input type="text">
+        <label>Zip Code:</label><input type="text">
+        <label>Tel. No:</label><input type="text">
+        <label>Email:</label><input type="email">
+      </div>
+      <div class="line-group">
+        <label>Home Address:</label><input type="text">
+        <label>Zip Code:</label><input type="text">
+        <label>Region:</label><input type="text">
+      </div>
+      <div class="line-group">
+        <label>Birthday:</label><input type="date">
+        <label>Age:</label><input type="number">
+        <label>Birthplace:</label><input type="text">
+        <label>Region:</label><input type="text">
+      </div>
+      <div class="line-group">
+        <label>Citizenship:</label><input type="text">
+        <label>Sex:</label><input type="text">
+        <label>If Alien, ACR #:</label><input type="text">
+      </div>
+    </div>
+
+    <div class="input-section">
+      <label><strong>Legal Status:</strong></label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Citizen of RP</label>
+        <label><input type="checkbox"> Permanent Resident</label>
+        <label><input type="checkbox"> Student Visa</label>
+        <label><input type="checkbox"> Dependent Visa</label>
+        <label><input type="checkbox"> Other Visa</label>
+        <label><input type="checkbox"> Unknown</label>
+      </div>
+
+      <br>
+
+      <label><strong>Civil Status:</strong></label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Single</label>
+        <label><input type="checkbox"> Married</label>
+        <label><input type="checkbox"> Divorced</label>
+        <label><input type="checkbox"> Widowed</label>
+        <label><input type="checkbox"> Separated</label>
+      </div>
+
+      <br>
+
+      <label><strong>Employment Status:</strong></label>
+      <div class="radio-group">
+        <label><input type="radio" name="working"> Working</label>
+        <label><input type="radio" name="working"> Not Working</label>
+        <label>Office Tel: <input type="text"></label>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="split-columns">
+      <div class="column">
+        <h3>Father’s Information</h3>
+        <div class="input-field"><label>Surname</label><input type="text"></div>
+        <div class="input-field"><label>First Name</label><input type="text"></div>
+        <div class="input-field"><label>Middle Name</label><input type="text"></div>
+        <div class="input-field"><label>Auxiliary Name</label><input type="text"></div>
+        <div class="input-field"><label>Occupation</label><input type="text"></div>
+        <div class="input-field"><label>Educational Attainment</label><input type="text"></div>
+        <div class="input-field"><label>Parent’s Address</label><input type="text"></div>
+        <div class="input-field"><label>Zip Code</label><input type="text"></div>
+      </div>
+
+      <div class="column">
+        <h3>Mother’s Information</h3>
+        <div class="input-field"><label>Surname</label><input type="text"></div>
+        <div class="input-field"><label>First Name</label><input type="text"></div>
+        <div class="input-field"><label>Middle Name</label><input type="text"></div>
+        <div class="input-field"><label>Auxiliary Name</label><input type="text"></div>
+        <div class="input-field"><label>Occupation</label><input type="text"></div>
+        <div class="input-field"><label>Educational Attainment</label><input type="text"></div>
+        <div class="input-field"><label>Parent’s Tel. #</label><input type="text"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div>
+      <h3>Guardian’s Information (If Applicable)</h3>
+      <div class="split-columns">
+        <div class="column">
+          <div class="input-field"><label>Surname</label><input type="text"></div>
+          <div class="input-field"><label>First Name</label><input type="text"></div>
+          <div class="input-field"><label>Middle Name</label><input type="text"></div>
+          <div class="input-field"><label>Auxiliary Name</label><input type="text"></div>
+        </div>
+        <div class="column">
+          <div class="input-field"><label>Guardian’s Address</label><input type="text"></div>
+          <div class="input-field"><label>Zip Code</label><input type="text"></div>
+          <div class="input-field"><label>Tel. #</label><input type="text"></div>
+          <div class="input-field"><label>Occupation</label><input type="text"></div>
+          <div class="input-field"><label>Office/Bus. Tel. #</label><input type="text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

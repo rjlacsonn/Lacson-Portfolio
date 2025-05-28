@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.bordered-img {
+    border: 2px solid black;
+}
+
+.fixed-size-img {
+    width: 480px;
+    height: 480px;
+}
+
+.rounded-img {
+    border-radius: 20px;
+}
+
+.specific-rounded-img {
+    border-radius: 20px 0 0 20px;
+}
+
+.linked-img {
+    width: 300px;
+}
+
+.float-img {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+}
+
+.hover-img {
+    transition: transform 0.3s;
+}
+
+.hover-img:hover {
+    transform: scale(1.1);
+}
+
+.shadow-img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.shape-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.shape-img {
+    width: 200px;
+    shape-outside: circle();
+    float: left;
+    margin-right: 15px;
+}
+
+.shape-container2 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.shape-img2 {
+    width: 200px;
+    shape-outside: ellipse();
+    float: left;
+    margin-right: 15px;
+}
+
+.mask1 {
+    -webkit-mask-image: url(/IMAGES/lacson.png);
+    mask-image: url(/IMAGES/lacson.png);
+}
+
+.mask2 {
+    -webkit-mask-image: url(/IMAGES/LIMLINGAN.png);
+    mask-image: url(/IMAGES/LIMLINGAN.png);
+}

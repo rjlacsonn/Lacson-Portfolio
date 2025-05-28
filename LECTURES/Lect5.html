@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 5 - CSS</title>
+  <link rel="stylesheet" href="../CSS/lecstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Lecture 5: CSS</h1>
+    <p>Integrative Programming and Technologies 1</p>
+  </header>
+  <main>
+
+    <section>
+      <h2>Sample Activity for Lesson 5</h2>
+      <a href="../LECTACTS/lect5act.html" target="_blank">
+        <button class="nav-button">Open Lesson 5 Activity</button>
+      </a>
+    </section>
+
+    <section>
+      <h2>Introduction to CSS3</h2>
+      <p>CSS (Cascading Style Sheets) separates structure from presentation and allows consistent styling across web pages. CSS3 introduces modules, backwards compatibility with CSS2.1, and enhanced styling capabilities.</p>
+    </section>
+
+    <section>
+      <h2>CSS Syntax and Selectors</h2>
+      <pre><code>selector {
+  property: value;
+}</code></pre>
+
+      <h3>Selectors</h3>
+      <ul>
+        <li>Element Selector</li>
+        <li>ID Selector: <code>#idname</code></li>
+        <li>Class Selector: <code>.classname</code></li>
+        <li>Grouping Selectors: <code>h1, h2, p {}</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CSS Comments</h2>
+      <pre><code>/* This is a comment */</code></pre>
+    </section>
+
+    <section>
+      <h2>Ways to Insert CSS</h2>
+      <ul>
+        <li>External Style Sheet</li>
+        <li>Internal Style Sheet</li>
+        <li>Inline Style</li>
+      </ul>
+      <pre><code>&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Cascading Order</h2>
+      <ol>
+        <li>Inline</li>
+        <li>Internal</li>
+        <li>External</li>
+        <li>User Settings</li>
+        <li>Browser Defaults</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>CSS Colors</h2>
+      <pre><code>background-color: rgba(255, 0, 0, 0.5);</code></pre>
+      <p>Color formats include RGB, HEX, HSL, RGBA, HSLA.</p>
+    </section>
+
+    <section>
+      <h2>CSS Backgrounds</h2>
+      <pre><code>body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}</code></pre>
+      <p>Use shorthand: <code>background: #fff url(...) no-repeat right top;</code></p>
+    </section>
+
+    <section>
+      <h2>CSS Borders</h2>
+      <ul>
+        <li>border-style: dotted, dashed, solid, etc.</li>
+        <li>border-width: thin, medium, thick</li>
+        <li>border-color: name, hex, rgb</li>
+        <li>Shorthand: <code>border: 5px solid red;</code></li>
+        <li>Individual sides: <code>border-left:</code>, <code>border-bottom:</code></li>
+        <li>Rounded: <code>border-radius: 5px;</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>CSS Dimensions</h2>
+      <p>Use <code>height</code>, <code>width</code>, and <code>max-width</code> to control sizing.</p>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>Carey, P. (2018). New Perspectives on HTML5, CSS3, and JavaScript</li>
+        <li>Jenkins, S. (2013). Web Design All-in-One for Dummies</li>
+        <li>Parker, J. (2021). HTML for Beginners</li>
+        <li>W3Schools Online Tutorials</li>
+        <li>Sklar, J. (2012). Web Design Principles</li>
+        <li>Castro, E., & Hyslop, B. (2013). HTML and CSS: Visual QuickStart Guide</li>
+      </ul>
+    </section>
+
+    <div class="nav-controls">
+      <a href="Lect4.html" class="nav-button">← Back</a>
+      <a href="Lect6.html" class="nav-button next">Next →</a>
+    </div>
+
+  </main>
+  <footer>
+    &copy; 2025 Lecture 5 - CSS
+  </footer>
+</body>
+</html>

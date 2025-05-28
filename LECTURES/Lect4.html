@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 4 - Lists, Links, and Images</title>
+  <link rel="stylesheet" href="../CSS/lecstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Lecture 4: Lists, Links, and Images</h1>
+    <p>Integrative Programming and Technologies 1</p>
+  </header>
+  <main>
+
+    <section>
+      <h2>Sample Activity for Lesson 4</h2>
+      <a href="../LECTACTS/lect4act.html" target="_blank">
+        <button class="nav-button">Open Lesson 4 Activity</button>
+      </a>
+    </section>
+
+    <section>
+      <h2>HTML Lists</h2>
+      <p>HTML lists help organize information effectively. There are three types:</p>
+      <ul>
+        <li>Ordered Lists &lt;ol&gt;</li>
+        <li>Unordered Lists &lt;ul&gt;</li>
+        <li>Description Lists &lt;dl&gt;</li>
+      </ul>
+
+      <h3>Ordered Lists</h3>
+      <pre><code>&lt;ol&gt;
+  &lt;li&gt;Notebook&lt;/li&gt;
+  &lt;li&gt;Ballpen&lt;/li&gt;
+  &lt;li&gt;Yellow Paper&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      <pre><code>li {
+  list-style-type: upper-roman;
+}</code></pre>
+
+      <h4>List Style Types</h4>
+      <table>
+        <tr><th>Style</th><th>Description</th></tr>
+        <tr><td>decimal</td><td>Numbers (default)</td></tr>
+        <tr><td>upper-alpha</td><td>Uppercase letters</td></tr>
+        <tr><td>lower-alpha</td><td>Lowercase letters</td></tr>
+        <tr><td>upper-roman</td><td>Uppercase Roman numbers</td></tr>
+        <tr><td>lower-roman</td><td>Lowercase Roman numbers</td></tr>
+      </table>
+
+      <h3>Unordered List</h3>
+      <pre><code>&lt;ul style="list-style-type:square"&gt;
+  &lt;li&gt;Notebook&lt;/li&gt;
+  &lt;li&gt;Ballpen&lt;/li&gt;
+  &lt;li&gt;Yellow Paper&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+      <h4>Bullet Styles</h4>
+      <table>
+        <tr><th>Value</th><th>Description</th></tr>
+        <tr><td>disc</td><td>Default bullet</td></tr>
+        <tr><td>circle</td><td>Hollow circle</td></tr>
+        <tr><td>square</td><td>Square bullet</td></tr>
+        <tr><td>none</td><td>No bullet</td></tr>
+      </table>
+
+      <h3>Description List</h3>
+      <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Notebook&lt;/dt&gt;
+  &lt;dd&gt;- a small book for notes&lt;/dd&gt;
+  &lt;dt&gt;Ballpen&lt;/dt&gt;
+  &lt;dd&gt;- a pen with ink&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+      <h3>Nested Lists</h3>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea
+    &lt;ul&gt;
+      &lt;li&gt;Black tea&lt;/li&gt;
+      &lt;li&gt;Green tea&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+      <h3>Horizontal List (Navigation)</h3>
+      <pre><code>&lt;style&gt;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+&lt;/style&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>HTML Links / Hyperlinks</h2>
+      <p>The &lt;a&gt; (anchor) tag creates links to other pages.</p>
+      <pre><code>&lt;a href="home.html"&gt;Back to HOME&lt;/a&gt;
+&lt;a href="http://google.com"&gt;Google&lt;/a&gt;
+&lt;a href="template.htm"&gt;template&lt;/a&gt;</code></pre>
+
+      <h3>Target Attribute</h3>
+      <table>
+        <tr><th>Value</th><th>Description</th></tr>
+        <tr><td>_blank</td><td>New tab or window</td></tr>
+        <tr><td>_self</td><td>Same tab (default)</td></tr>
+        <tr><td>_parent</td><td>Parent frame</td></tr>
+        <tr><td>_top</td><td>Full window</td></tr>
+      </table>
+
+      <h3>Image Links</h3>
+      <pre><code>&lt;a href="template.html"&gt;
+  &lt;img src="panda.png" alt="Lect1" style="width:42px;height:42px;border:0;"&gt;
+&lt;/a&gt;</code></pre>
+
+      <h3>Floating Images</h3>
+      <pre><code>&lt;p&gt;&lt;img src="polar.png" style="float:right;width:42px;height:42px;"&gt;Text beside image.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Image Maps</h2>
+      <p>Use the <code>usemap</code> and <code>&lt;map&gt;</code> tags to create clickable hotspots on an image.</p>
+      <pre><code>&lt;map name="map-name"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" href="link.html" alt="Rect"&gt;
+&lt;/map&gt;</code></pre>
+
+      <h3>Shape Types</h3>
+      <ul>
+        <li>rect</li>
+        <li>circle</li>
+        <li>poly</li>
+        <li>default</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>HTML Images</h2>
+      <p>Images are added using &lt;img&gt; tag with attributes like <code>src</code> and <code>alt</code>.</p>
+      <pre><code>&lt;img src="panda.png" alt="Panda Bear" style="width:500px;height:600px;"&gt;
+&lt;img src="images/circle.jpg" alt="Circle" style="width:128px;height:128px;"&gt;
+&lt;img src="https://www.ue.edu.ph/manila/main/misc/ccss.png" alt="UE-CCSS"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>Jenkins, S. (2013). Web Design All-in-One for Dummies. John Wiley & Sons.</li>
+        <li>Parker, J. (2021). HTML for Beginners</li>
+        <li>W3Schools.com</li>
+        <li>Sklar, J. (2012). Web Design Principles.</li>
+        <li>Castro, E., & Hyslop, B. (2013). HTML and CSS: Visual QuickStart Guide.</li>
+      </ul>
+    </section>
+
+    <div class="nav-controls">
+      <a href="/LECTURES/Lect3.html" class="nav-button">← Back</a>
+      <a href="/LECTURES/Lect5.html" class="nav-button next">Next →</a>
+    </div>
+
+  </main>
+  <footer>
+    &copy; 2025 Lecture 4 - Lists, Links, and Images
+  </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rj's Developer Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('/IMAGES/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 830px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-right: 50px;
+}
+
+h1 {
+    color: #333;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2,h3 {
+    color: #444;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e0e0e0;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.hobbies, .skills {
+    margin-top: 20px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.organizations {
+    max-width: 900px;
+    margin: auto;
+}
+
+.pic {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.altarscout {
+    overflow: hidden;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.altarscout.left img {
+    float: left;
+    margin-right: 20px;
+}
+
+.altarscout.right {
+    flex-direction: row-reverse; 
+    border-bottom: 2px solid #ddd;
+}
+
+.altarscout.right img {
+    margin-left: 20px;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.socials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    font-size: 30px; 
+    margin: 0 10px; 
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.org-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin: 20px 0 0;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  .altarscout {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .altarscout img {
+    margin: 0 auto 15px !important;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .socials a {
+    font-size: 24px;
+  }
+}
+
+</style>
+<body> 
+    <div class="container">
+        <header>
+            <div class="header-text">
+                <h1>Hello and Welcome to My Developer Page!</h1>
+                <p>In this page, you will know me well. Let me introduce myself to all of you...</p>
+            </div>
+            <img src="../IMAGES/IMG_2262.JPEG" alt="RJ's photo" class="profile-pic">
+        </header>
+
+        <section id="biography" class="design">
+            <h2>📖 Biography</h2>
+            <p>I'm <strong>RJ Aaron Lacson</strong>, a simple student and has a high dreams in my life. Yes, I am one of our teacher's noisy student but I am also a responsible student. As you may not know, I am a good student. Yes, of course. You know why? Because even though my travel time is so tiring and hectic I can still keep up with the energy of my classmates, even when I'm tired and lack of sleep everyday. Come and join to know more about me.. </p>
+        </section>
+        
+        <section id="education" class="design">
+            <h2>🎓 Education</h2>
+            <p>I am currently studying at the <em><b>University of the East, Manila</b></em>. I am taking a Computer Science course because I heard that the salary for this course is high once I get a job. Kidding aside, I want to pursue this course because this is my pasion and I also want to enhance my skills in the field of technology that's why I take this course. Even though I'm so weak at Mathematics, I try to handle it and pass so I can make my parents proud.</p>
+        </section>
+        
+        <section id="hobbies" class="design">
+            <h2>🎭 Hobbies & Interests</h2>
+            <ul>
+                <li>🎮 Playing Video Games</li>
+                <li>🍳 Cooking</li>
+                <li>🎵 Creating Music / Playing Instrument</li>
+                <li>🏍️ Motorcycle Riding</li>
+            </ul>
+        </section>
+        
+        <section id="skills" class="design">
+            <h2>💡 Skills</h2>
+            <ul>
+                <li>🗣️ Good Communication</li>
+                <li>🎤 Public Speaking</li>
+                <li>⚡ Quick Response</li>
+                <li>👨‍💼 Leadership</li>
+                <li>👀 Good Observation Skills</li>
+            </ul>
+        </section>
+        
+        <section id="organizations" class="design">
+            <h2>🤝 Organizations</h2>
+            <div class="altarscout left">
+                <img src="../IMAGES/altar.jpg" alt="RJ's photo" class="pic">
+                <div class="text">
+                    <h3 class="org-name">Ministry of Altar Server</h3>
+                    <p>When I was 13 yrs old, I joined the Ministry of Altar Server also known as <b>"Sacristan"</b> in Nuestra Señora de Aranzazu here in San Mateo, Rizal. Until now I'm also a member of this organization, but due to the lack of time I can't commit to other activities that their conducting right now. I'm so very blessed that I have a previleged to serve our Lord in our Parish Church.</p>
+                </div>
+            </div>
+
+            <div class="altarscout right">
+                <img src="../IMAGES/scout.jpg" alt="RJ's photo" class="pic">
+                <div class="text">
+                    <h3 class="org-name">Boy Scout of the Philippines</h3>
+                    <p>I joined Boy Scout of the Philippines because I'm the type of person that always want to go outside or kind of exploring something to himself. Because of this group, I learned a lot of things about myself. I also discover things that I don't know that I can do it. I learned many things here until I got older until the day came when I achieved the highest rank that a scout can reach, that is being an <b>Eagle</b>.
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="socials">
+                <p>Follow me on my all social media platforms to stay updated on my latest activities, events, and stories.</p>
+                <a href="https://facebook.com/rjlacsonn" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/rjlacsonn" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@rjlacsonn" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </section>
+        </footer>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RJ Aaron Lacson's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5e6e8;
+      color: #5a3e46;
+      text-align: center;
+      padding: 20px 10px 60px; /* extra bottom padding for fixed footer */
+    }
+
+    header {
+      background-color: #eec9d2;
+      color: #5a3e46;
+      padding: 40px 20px 20px;
+      font-size: 2.2em;
+      font-weight: bold;
+      text-shadow: 1px 1px #c39fa6;
+      border-bottom: 2px solid #d6a6b3;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+
+    nav {
+      background-color: #f5e6e8;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px 10px;
+      gap: 10px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #d6a6b3;
+    }
+
+    nav a {
+      color: #5a3e46;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #f8d6dd;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 0 auto 30px;
+      border: 4px solid #d6a6b3;
+      display: block;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #7a575e;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      text-align: left;
+      background-color: #f8d6dd;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(198, 136, 149, 0.3);
+      color: #5a3e46;
+    }
+
+    section h3 {
+      margin-top: 0;
+      font-size: 1.6em;
+      color: #9e6a6c;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #d6a6b3;
+      padding-bottom: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.1em;
+    }
+
+    ul li {
+      margin: 8px 0;
+      line-height: 1.4;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 10px;
+      color: #d37482;
+      font-weight: bold;
+      font-size: 1.4em;
+      top: 2px;
+    }
+
+    .socials {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .socials a {
+      font-size: 30px; 
+      margin: 0 10px; 
+      color: #333; 
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    footer {
+      background-color: #eec9d2;
+      color: #5a3e46;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #d6a6b3;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.6em;
+        padding: 30px 10px 15px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px;
+        margin-bottom: 30px;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .profile-pic {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 25px;
+      }
+
+      .intro {
+        font-size: 1em;
+        padding: 0 10px;
+      }
+
+      section {
+        padding: 20px;
+        margin: 0 10px 30px;
+      }
+
+      footer {
+        font-size: 0.8em;
+        padding: 10px;
+        position: static;
+        margin-top: 40px;
+      }
+
+      .socials a {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    RJ AARON LACSON
+  </header>
+
+  <nav>
+    <a href="index.html">ABOUT ME</a>
+    <a href="LECTURES/listpages.html">LIST OF LECTURES</a>
+    <a href="PRELIMS/listprelims.html">PRELIM ACTIVITIES</a>
+    <a href="MIDTERMS/listmidterms.html">MIDTERM ACTIVITIES</a>
+    <a href="FINALS/listfinals.html">FINAL ACTIVITIES</a>
+  </nav>
+
+  <img src="../IMAGES/IMG_2262.JPEG" alt="RJ Aaron Lacson Profile Picture" class="profile-pic" />
+
+  <div class="intro">
+    <p>
+      I'm RJ Aaron Lacson, a simple student with high dreams. I am currently studying at the University of the East, Manila. I am taking a Computer Science course because I heard that the salary for this course is high once I get a job.
+    </p>
+  </div>
+
+  <section>
+    <h3>Hobbies & Interests</h3>
+    <ul>
+      <li>🎮 Playing Video Games</li>
+      <li>🍳 Cooking</li>
+      <li>🎵 Creating Music / Playing Instrument</li>
+      <li>🏍️ Motorcycle Riding</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Skills</h3>
+    <ul>
+      <li>🗣️ Good Communication</li>
+      <li>🎤 Public Speaking</li>
+      <li>⚡ Quick Response</li>
+      <li>👨‍💼 Leadership</li>
+      <li>👀 Good Observation Skills</li>
+    </ul>
+  </section>
+
+  <section>
+      <h3>Organizations</h3>
+      <p>
+        I am proud to be part of the Ministry of Altar Servers at Nuestra Señora de Aranzazu Parish and the Boy Scouts of the Philippines,  
+        where I achieved the highest rank of Eagle Scout. These experiences have shaped my character and leadership skills.
+      </p>
+  </section>
+
+  <div class="socials">
+    <a href="https://facebook.com/rjlacsonn" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com/rjlacsonn" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@rjlacsonn" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+
+  <footer>
+    &copy; 2025 RJ Aaron N. Lacson Portfolio
+  </footer>
+
+</body>
+</html>

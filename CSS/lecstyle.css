@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f5;
+    color: #4a2b2b;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #f8dce0;
+    color: #2c1d1d;
+    padding: 40px 20px 20px;
+    text-align: center;
+    border-bottom: 2px solid #eec9d2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+}
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #6e4c4c;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px 100px;
+}
+.nav-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #eec9d2;
+    color: #5a3e46;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #f5e6e8;
+    border-color: #d6a6b3;
+}
+
+section {
+    margin-bottom: 40px;
+}
+h2 {
+    color: #a04a61;
+    border-bottom: 2px solid #eabdc5;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+h3 {
+    color: #a04a61;
+    margin-top: 30px;
+}
+pre {
+    background-color: #fceef3;
+    padding: 15px;
+    border-left: 5px solid #d99aa5;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #70303f;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    border: 1px solid #d7a1b0;
+}
+
+th, td {
+    border: 1px solid #d7a1b0;
+    padding: 8px;
+    background-color: #fdf7f9;
+}
+
+th {
+    background-color: #f8dce0;
+    color: #4a2b2b;
+}
+ul, ol {
+    margin-left: 20px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8dce0;
+    color: #4a2b2b;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    border-top: 1px solid #eec9d2;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}

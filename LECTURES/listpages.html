@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design Lectures Navigation</title>
+  <style>
+    /* Smooth scroll and box model reset */
+    html {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #4a2b2b;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .header-link:hover header {
+      background-color: #f3c2cc;
+      cursor: pointer;
+    }
+
+    header {
+      background-color: #f8dce0;
+      color: #2c1d1d;
+      padding: 40px 20px 20px;
+      text-align: center;
+      border-bottom: 2px solid #eec9d2;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #6e4c4c;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto 100px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #8c4a5b;
+      font-size: 1.8em;
+      margin-bottom: 30px;
+    }
+
+    .nav-button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 15px auto;
+      padding: 15px 30px;
+      background-color: #f5cfd7;
+      color: #4a2b2b;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 12px;
+      border: 1px solid #e5a6b2;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #fbe9ef;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f8dce0;
+      color: #4a2b2b;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #eec9d2;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header {
+        padding: 30px 10px 15px;
+      }
+
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .nav-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
+
+      footer {
+        font-size: 0.8em;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="../index.html" class="header-link">
+    <header>
+      <h1>LECTURES PAGE</h1>
+      <p>Select a Lecture to View</p>
+    </header>
+  </a>
+
+  <main>
+    <h2>Lectures</h2>
+    <a href="Lect1.html" class="nav-button">Lecture 1 - Intro to Web Design</a>
+    <a href="Lect2.html" class="nav-button">Lecture 2 - HTML Structures</a>
+    <a href="Lect3.html" class="nav-button">Lecture 3 - Tables</a>
+    <a href="Lect4.html" class="nav-button">Lecture 4 - Lists, Links, and Images</a>
+    <a href="Lect5.html" class="nav-button">Lecture 5 - CSS</a>
+    <a href="Lect6.html" class="nav-button">Lecture 6 - Forms and Multimedia</a>
+    <a href="Lect7.html" class="nav-button">Lecture 7 - Bootstrap</a>
+  </main>
+
+  <footer>
+    &copy; 2025 List of Lectures
+  </footer>
+
+</body>
+</html>
