@@ -51,7 +51,7 @@ nav ul li a:focus {
 
 /* Hero Section */
 .hero-alt {
-    background: url('/IMAGES/ikea.png') no-repeat center center/cover;
+    background: url('../IMAGES/ikea.png') no-repeat center center/cover;
     text-align: center;
     padding: 120px 20px;
     color: white;

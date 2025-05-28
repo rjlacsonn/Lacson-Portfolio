@@ -78,11 +78,11 @@ img {
 }
 
 .mask1 {
-    -webkit-mask-image: url(/IMAGES/lacson.png);
-    mask-image: url(/IMAGES/lacson.png);
+    -webkit-mask-image: url(../IMAGES/lacson.png);
+    mask-image: url(../IMAGES/lacson.png);
 }
 
 .mask2 {
-    -webkit-mask-image: url(/IMAGES/LIMLINGAN.png);
-    mask-image: url(/IMAGES/LIMLINGAN.png);
+    -webkit-mask-image: url(../IMAGES/LIMLINGAN.png);
+    mask-image: url(../IMAGES/LIMLINGAN.png);
 }
